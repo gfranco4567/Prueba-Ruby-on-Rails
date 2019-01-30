@@ -1,0 +1,14 @@
+<h1>Detalles ToDo</h1>
+
+<br>
+<h3>Descripción de la tarea</h3>
+<%= @todo.description %>
+<br>
+<h3>Status (t= completada / f= pendiente)</h3>
+<%= @todo.complete %>
+<br>
+<%= link_to 'Edit todo', edit_todo_path(@todo) %>
+<br>
+<%= link_to 'Delete todo', todo_path(@todo), data: {confirm: '¿Estás seguro?', method: :delete} %>
+<br>
+<%= link_to 'Back', root_path %>

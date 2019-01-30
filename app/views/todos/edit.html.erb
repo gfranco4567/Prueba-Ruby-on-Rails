@@ -1,0 +1,10 @@
+<h1>Edit ToDo</h1>
+<h2>Ingresa los datos a modificar</h2>
+
+<%= form_with(model: @todo, local: true) do |f| %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.submit 'Actualizar!' %>
+<% end %>
+
+<%= link_to 'Back', todo_path(@todo) %>

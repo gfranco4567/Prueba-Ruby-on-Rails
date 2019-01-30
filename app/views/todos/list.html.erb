@@ -1,0 +1,16 @@
+<h1>Listas de Tareas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ToDo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @todos.each do |todos| %>
+    <tr>
+      <td><%= todos.description%></td>
+    </tr>
+    <%end%>
+  </tbody>
+</table>
